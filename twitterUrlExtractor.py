@@ -53,7 +53,7 @@ def main(argv):
 
     o = open(output, 'w')
     for tw_url in urls:
-        o.write(tw_url+'\n')
+        o.write('%s\n' % (tw_url))
     o.close()
 
     print "finished extraction, result in %s" % (output)
